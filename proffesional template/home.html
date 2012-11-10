@@ -1,8 +1,125 @@
+<!docktype html>
 <html>
 <head>
-	<title></title>
+	<title>Homepage</title>
+	<style type="text/css">
+		body {
+			background-color: black;
+			background-image: url(upperBG.jpg);
+			background-repeat: no-repeat;
+			background-position: top center;
+		}
+		h2{
+			color:grey;
+			font:25px Arial, sans-serif;
+		}	
+		#col1 {
+			float:left;
+			width:265px;
+			
+		}	
+		#col2{
+			float:left;
+			width:265px;
+		}
+		#col3{
+			float:right;
+			width:265px;
+		}
+		#col2 img{
+			
+			margin:30px, 40px, 25px, 20px;
+			
+		}
+		p{
+			font:12px Arial, sans-serif;
+			color:grey;
+		}
+		#wrapper{
+			background-color: #fff;
+			width:960px;
+			height:1340;
+			margin:40 auto;
+			border: 1px solid #fff;
+			border-radius: 10px;
+			
+		}
+		#col2 ul li a{
+			font: 12px Arial, sans-serif;
+		}
+		#col2 ul li{
+			list-style:none;
+			background-image: url(col2List.jpg);
+			background-repeat: no-repeat;
+			background-position: 0 17px;
+			padding:12px 7px;}
+		#col2 li:first-child {
+			border-bottom: 1px dotted grey;
+		}
+		#col2 li:last-child {
+			border-top: 1px dotted grey;
+		}
+		#logo{
+			position:relative;
+			top:100px;
+			left:365px;
+		}
+		header ul li{
+			display:inline;
+			padding:27px 55px;
+			position: relative;
+			float:right;
+			color:red;
+		}
+		header ul li a {
+			background-image: url(buttonHome.jpg);
+			background-repeat: no-repeat;
+		}
+	</style>
 </head>
 <body>
-
+	<header>
+		<img src="images/logoUp.jpg" id="logo"/>	
+		<ul>
+			<li><a link="Home.html" class="button">Home</a></li>
+			<li>About</li>
+			<li>Servises</li>
+			<li>Portfolio</li>
+			<li>Contact</li>
+		</ul>
+	</header>
+	<section></section>
+	<nav></nav>
+	<aside></aside>
+	<footer></footer>
+	<div id="wrapper">
+		<div id="col1">
+			<h2>Who we are?</h2>
+			<img src="images/colon1.jpg" />
+			<p>text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+		</div>
+		<div id="col2">
+			<h2>What we do?</h2>
+			<img src="images/colon2.jpg" />
+			<p>text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+			<ul>
+				<li>
+					<a href="www.tut.by">Website design </a>
+				</li>
+				<li>
+					<a href="www.tut.by">Blog design</a>
+				</li>
+				<li>
+					<a href="www.tut.by">Branding design</a>
+				</li>
+			</ul>	
+		</div>
+		<div id="col3">
+			<h2>Why hire us?</h2>
+			<img src="images/colon3.jpg" />
+			<p>text text text text text text text text text text text text text text text text text text text text text text text text text</p>	
+			<button type="button">READ MORE</button>
+		</div>
+	</div>	
 </body>
 </html>
