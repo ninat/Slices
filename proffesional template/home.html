@@ -1,4 +1,4 @@
-<!docktype html>
+<!doctype html>
 <html>
 <head>
 	<title>Homepage</title>
@@ -38,8 +38,8 @@
 		#wrapper{
 			background-color: #fff;
 			width:960px;
-			height:1340;
-			margin:40 auto;
+			height:1340px;
+			margin:40px auto;
 			border: 1px solid #fff;
 			border-radius: 10px;
 			
@@ -61,38 +61,78 @@
 		}
 		#logo{
 			position:relative;
-			top:100px;
-			left:365px;
+			float:left;
+			top:35px;
+			left:40px;
 		}
-		header ul li{
+		#wrapper ul li{
 			display:inline;
-			padding:27px 55px;
+			padding:0px 25px;
 			position: relative;
 			float:right;
-			color:red;
+			top:58px;
+			right:-193px;
+			
 		}
-		header ul li a {
-			background-image: url(buttonHome.jpg);
+		#wrapper ul li:last-child  {
+			background-image: url(home.jpg);
 			background-repeat: no-repeat;
+			background-position: center;
+		}
+		#wrapper ul li a {
+			font:12px Arial, sans-serif;
+			text-decoration: none;
+		}
+		#tel{
+			position:relative;
+			float:right;
+		}
+		#bodyBG{
+			background-image: url(bodyBG.jpg);
+			background-repeat: no-repeat;
+			height:336px;
+			position:relative;
+			top:100px;
+		}
+		#ad{
+
+			position:relative;
+			float:right;
+			top:-160px;
+			right: 50px;
+		}
+		#bodyBG p{
+			font:29px Trebushed, sans-serif;
+			position:left;
 		}
 	</style>
 </head>
 <body>
 	<header>
-		<img src="images/logoUp.jpg" id="logo"/>	
-		<ul>
-			<li><a link="Home.html" class="button">Home</a></li>
-			<li>About</li>
-			<li>Servises</li>
-			<li>Portfolio</li>
-			<li>Contact</li>
-		</ul>
+		
+			
+		
 	</header>
 	<section></section>
 	<nav></nav>
 	<aside></aside>
 	<footer></footer>
 	<div id="wrapper">
+		<img src="tel.jpg" id="tel" />
+		<div>
+		<img src="images/logoUp.jpg" id="logo"/>
+		<ul>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="portfolio.html">PORTFOLIO</a></li>
+			<li><a href="services.html">SERVICES</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="home.html" class="button"> HOME </a></li>
+		</ul>	
+		<div id="bodyBG">
+			<p>We have what it takes to take your website to the NEW HEIGHT OF SUCCESS</p>
+		</div>
+		<img src="images/ad.jpg" id="ad"/>
+	</div>
 		<div id="col1">
 			<h2>Who we are?</h2>
 			<img src="images/colon1.jpg" />
