@@ -59,20 +59,19 @@
 		#col2 li:last-child {
 			border-top: 1px dotted grey;
 		}
-		#logo{
+		header img{
 			position:relative;
 			float:left;
 			top:35px;
 			left:40px;
 		}
-		#wrapper ul li{
+		header ul li{
 			display:inline;
-			padding:0px 25px;
+			padding:0px 24px;
 			position: relative;
 			float:right;
-			top:58px;
-			right:-193px;
-			
+			top:58px; /*26*/
+			right:-220px;
 		}
 		#wrapper ul li:last-child  {
 			background-image: url(home.jpg);
@@ -83,11 +82,20 @@
 			font:12px Arial, sans-serif;
 			text-decoration: none;
 		}
-		#tel{
-			position:relative;
-			float:right;
+		#wrapper ul{
+			margin:0;
 		}
-		#bodyBG{
+		#tel{
+			background:  url(images/tel.jpg) center no-repeat;
+			margin:0;
+			font: bold 18px Arial, sans-serif;
+			/*padding: 9px 28px 13px 86px;*/
+			float:right;
+			display:block;
+			height:34px;
+			width:223px;
+		}
+		#body{
 			background-image: url(bodyBG.jpg);
 			background-repeat: no-repeat;
 			height:336px;
@@ -95,41 +103,47 @@
 			top:100px;
 		}
 		#ad{
-
 			position:relative;
 			float:right;
 			top:-160px;
 			right: 50px;
 		}
-		#bodyBG p{
-			font:29px Trebushed, sans-serif;
+		#body p{
+			font: 29px Trebushed, sans-serif;
+			color:#fff;
 			position:left;
+		}
+		#body #start-button{
+			font: bold 20px Trebushed, sans-serif;
+			background: url(images/start-button.jpg) no-repeat;
+			dispaly:block;
+			padding: 18px 53px 18px 27px;
 		}
 	</style>
 </head>
 <body>
-	<header>
-		
-			
-		
-	</header>
+	
 	<section></section>
 	<nav></nav>
 	<aside></aside>
 	<footer></footer>
 	<div id="wrapper">
-		<img src="tel.jpg" id="tel" />
-		<div>
-		<img src="images/logoUp.jpg" id="logo"/>
-		<ul>
-			<li><a href="contact.html">CONTACT</a></li>
-			<li><a href="portfolio.html">PORTFOLIO</a></li>
-			<li><a href="services.html">SERVICES</a></li>
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="home.html" class="button"> HOME </a></li>
-		</ul>	
-		<div id="bodyBG">
+		<header>
+			<p id="tel">123-456-7890</p>
+			<div>
+				<img src="images/logoUp.jpg" id="logo"/>
+				<ul>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="portfolio.html">PORTFOLIO</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="home.html"> HOME </a></li>
+				</ul>
+			</div>
+		</header>	
+		<div id="body">
 			<p>We have what it takes to take your website to the NEW HEIGHT OF SUCCESS</p>
+			<p id="start-button">GET STARTED HERE</p>
 		</div>
 		<img src="images/ad.jpg" id="ad"/>
 	</div>
