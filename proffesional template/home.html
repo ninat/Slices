@@ -8,29 +8,25 @@
 			background-image: url(upperBG.jpg);
 			background-repeat: no-repeat;
 			background-position: top center;
+			margin: 0;
+			padding:0;
 		}
-		h2{
+		h1{
 			color:grey;
 			font:25px Arial, sans-serif;
-		}	
-		#col1 {
+		}
+		#columns
+		{
+			clear: both;	
+			overflow: hidden;
+		}
+
+		.col {
 			float:left;
 			width:265px;
-			
+			margin:0 0px 0 40px;
 		}	
-		#col2{
-			float:left;
-			width:265px;
-		}
-		#col3{
-			float:right;
-			width:265px;
-		}
-		#col2 img{
-			
-			margin:30px, 40px, 25px, 20px;
-			
-		}
+		
 		p{
 			font:12px Arial, sans-serif;
 			color:grey;
@@ -38,25 +34,25 @@
 		#wrapper{
 			background-color: #fff;
 			width:960px;
-			height:1340px;
+			/*height:1340px;*/
 			margin:40px auto;
-			border: 1px solid #fff;
 			border-radius: 10px;
 			
 		}
-		#col2 ul li a{
+		.col ul li a{
 			font: 12px Arial, sans-serif;
+			text-decoration: none;
 		}
-		#col2 ul li{
+		.col ul li{
 			list-style:none;
 			background-image: url(col2List.jpg);
 			background-repeat: no-repeat;
 			background-position: 0 17px;
 			padding:12px 7px;}
-		#col2 li:first-child {
+		.col li:first-child {
 			border-bottom: 1px dotted grey;
 		}
-		#col2 li:last-child {
+		.col li:last-child {
 			border-top: 1px dotted grey;
 		}
 		header img{
@@ -73,22 +69,30 @@
 			top:58px; /*26*/
 			right:-220px;
 		}
-		#wrapper ul li:last-child  {
+		
+		#wrapper li a {
+			font:12px Arial, sans-serif;
+			text-decoration: none;
+		}
+		
+		header ul li:last-child  {
 			background-image: url(home.jpg);
 			background-repeat: no-repeat;
 			background-position: center;
 		}
-		#wrapper ul li a {
-			font:12px Arial, sans-serif;
-			text-decoration: none;
+
+		#page{
+			color:#fff;
 		}
 		#wrapper ul{
 			margin:0;
+			padding: 0;
 		}
 		#tel{
-			background:  url(images/tel.jpg) center no-repeat;
+			background:  url(images/tel.jpg) no-repeat;
 			margin:0;
 			font: bold 18px Arial, sans-serif;
+			text-align:right;
 			/*padding: 9px 28px 13px 86px;*/
 			float:right;
 			display:block;
@@ -101,6 +105,7 @@
 			height:336px;
 			position:relative;
 			top:100px;
+			
 		}
 		#ad{
 			position:relative;
@@ -108,16 +113,96 @@
 			top:-160px;
 			right: 50px;
 		}
+		/* слайд шоу 
+		#ad:hover{
+        border: 5px solid orange;
+        }*/
 		#body p{
 			font: 29px Trebushed, sans-serif;
 			color:#fff;
 			position:left;
+			margin:0;
 		}
 		#body #start-button{
 			font: bold 20px Trebushed, sans-serif;
 			background: url(images/start-button.jpg) no-repeat;
-			dispaly:block;
 			padding: 18px 53px 18px 27px;
+			display:inline;
+			color:red;
+			text-align:left;
+			margin: 0;
+		}
+		#blurbs{
+			background-image: url(images/bg-grey.jpg);
+			position:relative;
+			height:122px;
+			top:222px;
+			/*clear:both;
+			overflow: hidden;*/		
+		}
+		#blurbs .reason{
+			width:33%;
+			height:122px;
+			float:left;
+			
+		}
+		#blurbs .reason p{
+			/*padding:50px 0 33px 0;*/
+			font:12px Arial, sans-serif ;
+			color:#575757;
+			margin: auto;
+			display: inline;
+		}
+		
+		h2{
+			font:bold 15px Arial, sans-serif ;
+			margin: 0;
+			padding:50px 0 0 0;
+			color:#575757;
+		}
+		.reason img{
+			padding:40px 20px 22px 50px;
+			float: left;
+		}
+		.byline{
+			font-style: bold;
+		}
+		#column1, #column2, #column3{
+			float:left;
+		}
+		#column1{
+			width:190px;
+			margin:0 40px;
+		}
+		#column2{
+			width: 300px;
+		}
+		#column3{
+			width: 280px;
+			margin: 0 40px 0 70px;
+		}
+		footer{
+			background-color: #ededed;
+			border-top: 1px solid #bababa;
+			overflow: hidden;
+			/*clear:both;*/
+		}
+		#wrapper footer ul li a{
+			color:grey;
+		}
+		#column1 ul li{
+			list-style-type:none;
+		}
+		footer h2 {
+			padding:30px 0;
+		}
+		#column2 p span{
+			font-weight: bold;
+			color:#000;
+		}
+		#column3 p span{
+			font-weight: bold;
+			color:#4a78c5;
 		}
 	</style>
 </head>
@@ -126,7 +211,7 @@
 	<section></section>
 	<nav></nav>
 	<aside></aside>
-	<footer></footer>
+	
 	<div id="wrapper">
 		<header>
 			<p id="tel">123-456-7890</p>
@@ -137,43 +222,106 @@
 					<li><a href="portfolio.html">PORTFOLIO</a></li>
 					<li><a href="services.html">SERVICES</a></li>
 					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="home.html"> HOME </a></li>
+					<li><a href="home.html" id="page"> HOME </a></li>
 				</ul>
 			</div>
 		</header>	
 		<div id="body">
 			<p>We have what it takes to take your website to the NEW HEIGHT OF SUCCESS</p>
 			<p id="start-button">GET STARTED HERE</p>
+			<div id="blurbs">
+				<div class="reason">
+					<img src="images/purse.jpg" >
+					<h2>Save big with us</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+				</div>
+				<div class="reason">
+					<img src="images/clock.jpg" >
+					<h2>Always on time</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+				</div>
+				<div class="reason">
+					<img src="images/telephone.jpg" >
+					<h2>Contact us</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+				</div>
+			</div>
+			
 		</div>
 		<img src="images/ad.jpg" id="ad"/>
-	</div>
-		<div id="col1">
-			<h2>Who we are?</h2>
-			<img src="images/colon1.jpg" />
-			<p>text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+		
+		
+		<div id="columns">
+			<div class="col">
+				<h1>Who we are?</h1>
+				<img src="images/colon1.jpg" alt="Web Design Example" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci, ut pretium mi sollicitudin id. Sed nec lectus ac enim malesuada mollis. 
+				</p>
+				<button type="button">READ MORE</button>
+			</div>
+			<div class="col">
+				<h1>What we do?</h1>
+				<img src="images/colon2.jpg" alt="Web Design Example" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci. 
+				<ul>
+					<li>
+						<a href="www.tut.by">Website design </a>
+					</li>
+					<li>
+						<a href="www.tut.by">Blog design</a>
+					</li>
+					<li>
+						<a href="www.tut.by">Branding design</a>
+					</li>
+				</ul>	
+			</div>
+			<div class="col">
+				<h1>Why hire us?</h1>
+				<img src="images/colon3.jpg" alt="Web Design Example" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci, ut pretium mi sollicitudin id. Sed nec lectus ac enim malesuada mollis.
+				</p>	
+				<button type="button">READ MORE</button>
+			</div>
 		</div>
-		<div id="col2">
-			<h2>What we do?</h2>
-			<img src="images/colon2.jpg" />
-			<p>text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+		<footer>
+		<div id="column1">
+			<h2>Browse Site</h2>
 			<ul>
 				<li>
-					<a href="www.tut.by">Website design </a>
+					<a href="www.google.com">About our conpany</a>
 				</li>
 				<li>
-					<a href="www.tut.by">Blog design</a>
+					<a href="www.google.com">Contact us</a>
 				</li>
 				<li>
-					<a href="www.tut.by">Branding design</a>
+					<a href="www.google.com">Our Portforio</a>
 				</li>
-			</ul>	
+				<li>
+					<a href="www.google.com">Our Prices</a>
+				</li>
+				<li>
+					<a href="www.google.com">Online quote form</a>
+				</li>
+				<li>
+					<a href="www.google.com">Client Testimonials</a>
+				</li>
+			</ul>
 		</div>
-		<div id="col3">
-			<h2>Why hire us?</h2>
-			<img src="images/colon3.jpg" />
-			<p>text text text text text text text text text text text text text text text text text text text text text text text text text</p>	
-			<button type="button">READ MORE</button>
+		<div id="column2">
+			<h2>Our Testimonials</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci, ut pretium mi sollicitudin id. Sed nec lectus ac enim malesuada mollis. Etiam egestas purus vitae eros mollis et elementum tellus facilisis. In iaculis, sapien ut tincidunt convallis, enim ipsum pretium libero, sed mattis libero augue eget metus. Sed rhoncus ultrices metus ac interdum. 
+			</p>
+			<p> <span>Rafi, GraphicsFuel.com </span></p>
 		</div>
-	</div>	
+		<div id="column3">
+			<h2>From Our Blog</h2>
+			<p>July 6, 2010</p>
+			<p><span>Lorem ipsum dolor sit amet, consectetur </span> adipiscing elit. Maecenas placerat vehicula magna, quis hendrerit risus commodo eu. Vivamus ultricies porttitor dui. </p>
+			<p>July 6, 2010</p>
+			<p><span>Lorem ipsum dolor sit amet, consectetur </span> adipiscing elit. Maecenas placerat vehicula magna, quis hendrerit risus commodo eu. Vivamus ultricies porttitor dui. </p>
+		</div>
+		</footer>	
+	</div>
+
 </body>
 </html>
