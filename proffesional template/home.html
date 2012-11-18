@@ -4,10 +4,7 @@
 	<title>Homepage</title>
 	<style type="text/css">
 		body {
-			background-color: black;
-			background-image: url(upperBG.jpg);
-			background-repeat: no-repeat;
-			background-position: top center;
+			background: #000 url(images/upperBG.jpg) top center no-repeat;
 			margin: 0;
 			padding:0;
 		}
@@ -46,7 +43,7 @@
 		}
 		.col ul li{
 			list-style:none;
-			background-image: url(col2List.jpg);
+			background-image: url(images/col2List.jpg);
 			background-repeat: no-repeat;
 			background-position: 0 17px;
 			padding:12px 7px;}
@@ -86,7 +83,7 @@
 		}
 		
 		header ul li:last-child  {
-			background-image: url(home.jpg);
+			background-image: url(images/home.jpg);
 			background-repeat: no-repeat;
 			background-position: center;
 		}
@@ -99,61 +96,100 @@
 			padding: 0;
 		}
 		#tel{
-			background:  url(images/tel.jpg) no-repeat;
-			margin:0;
-			font: bold 18px Arial, sans-serif;
-			text-align:center;
-			/*padding: 9px 28px 13px 86px;*/
-			float:right;
-			display:inline;
-			height:34px;
-			width:223px;
-			color:#c7c7c7;
+			background: url(images/tel.jpg) no-repeat scroll 0 0 transparent;
+		    color: #C7C7C7;
+		    display: block;
+		    float: right;
+		    font: bold 18px Arial,sans-serif;
+		    height: 24px;
+		    padding: 2px 0 10px 83px;
+		    width: 139px;
 		}
-		#body{
-			background-image: url(bodyBG.jpg);
+		header {
+			height: 98px;
+		}
+		/*#advertisement {
+			height: 458px;
+		}*/
+		section {
+			background-image: url(images/section-bg.jpg);
 			background-repeat: no-repeat;
 			height:336px;
-			position:relative;
-			top:100px;
-			
+			/*position:relative;
+			top:100px;*/
 		}
-		#ad{
+
+		#shadow {
 			position:relative;
+			top:-127px;
+			left:489px;
+		}
+		/*#ad{
+			float: right;
+    		/*position: relative;
+   			right: -7px;
+   			top: -185px;
+		}*/
+		#ball {
 			float:right;
-			top:-160px;
-			right: 50px;
-		}
-		/* слайд шоу 
+			margin: -415px 50px 0 0;
+			z-index: 20;
+			/*position:relative;
+			top: 17px ;
+			left: 515px;
+			width: 440px;*/
+		} 
+		 #wrapper #ball p {
+		 	font:bold 20px Arial sans-serif;
+		 	color:#000;
+		 	/*display: inline;
+		 	float: left;
+		 	padding: 15px 140px 12px 25px;
+		 	position: relative;
+   			right: 25px;
+    		top: -240px;*/
+		 }
+		 #ball ul li{
+		 	list-style-type:none;
+			display: inline;
+			float:right;
+			/*position: relative;
+   			right: 50px;
+    		top: -240px;*/
+		 }
 		#ad:hover{
-        border: 5px solid orange;
-        }*/
-		#body p{
+        	border: 5px solid orange;
+        }
+		section p{
 			font: 29px Trebushed, sans-serif;
 			color:#fff;
 			position:left;
 			margin:0;
+			/*width: 450px;*/
+			padding: 88px 65px 55px 50px;
 		}
-		#body #start-button{
+		section #start-button{
 			font: bold 20px Trebushed, sans-serif;
 			background: url(images/start-button.jpg) no-repeat;
-			padding: 18px 53px 18px 27px;
+			padding: 14px 53px 18px 14px;
 			display:inline;
 			color:red;
-			text-align:left;
-			margin: 0;
+			margin-left: 55px;
+			height: 55px;
+			width: 269px;
 		}
 		#blurbs{
 			background-image: url(images/bg-grey.jpg);
 			position:relative;
 			height:122px;
-			top:222px;
-			/*clear:both;
-			overflow: hidden;*/		
+			/*top:97px;*/
+			clear:both;
+			overflow: hidden;	
+			z-index: 10;	
 		}
 		#blurbs .reason{
 			width:33%;
-			height:122px;
+			/*height:122px;*/
 			float:left;
 			
 		}
@@ -163,6 +199,7 @@
 			color:#575757;
 			margin: auto;
 			display: inline;
+			padding: 0;
 		}
 		
 		h2{
@@ -247,7 +284,6 @@
 </head>
 <body>
 	
-	<section></section>
 	<nav></nav>
 	<aside></aside>
 	
@@ -255,7 +291,7 @@
 		<header>
 			<p id="tel">123-456-7890</p>
 			<div>
-				<img src="images/logoUp.jpg" id="logo"/>
+				<img src="images/logoUp.jpg" alt="logo" id="logo"/>
 				<ul>
 					<li><a href="contact.html">CONTACT</a></li>
 					<li><a href="portfolio.html">PORTFOLIO</a></li>
@@ -264,32 +300,44 @@
 					<li><a href="home.html" id="page"> HOME </a></li>
 				</ul>
 			</div>
-		</header>	
-		<div id="body">
-			<p>We have what it takes to take your website to the NEW HEIGHT OF SUCCESS</p>
-			<p id="start-button">GET STARTED HERE</p>
-			<div id="blurbs">
+		</header>
+		<div id="advertisement">	
+			<section>
+			
+				<p>We have what it takes to <br> take your website to the <br>NEW HEIGHT OF SUCCESS</p>
+				<p id="start-button">GET STARTED HERE</p>
+				
+			</section>	
+
+			<div id="blurbs">			
 				<div class="reason">
-					<img src="images/purse.jpg" >
+					<img src="images/purse.jpg" alt="purse" />
 					<h2>Save big with us</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 				</div>
 				<div class="reason">
-					<img src="images/clock.jpg" >
+					<img src="images/clock.jpg" alt="clock" />
 					<h2>Always on time</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 				</div>
 				<div class="reason">
-					<img src="images/telephone.jpg" >
+					<img src="images/telephone.jpg" alt="telephone" />
 					<h2>Contact us</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-				</div>
+				</div>	
+				<img src="images/ad-shadow.jpg" alt="ad shadow" id="shadow" />		
+			</div>		
+			<div id="ball">
+				<p>U Design + V Code</p>
+				<ul>
+					<li> <a href="http://www.tut.by" > <img src="images/ball-white.jpg" alt="white ball" /> </a></li>
+					<li> <a href="http://www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
+					<li> <a href="http://www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
+					<li> <a href="www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
+				</ul>
+				<img src="images/ad.jpg" id="ad"/>					
 			</div>
-			
-		</div>
-		<img src="images/ad.jpg" id="ad"/>
-		
-		
+		</div>	
 		<div id="columns">
 			<div class="col">
 				<h1>Who we are?</h1>
@@ -364,9 +412,9 @@
 			<p>Copyright © 2010 Business. All rights reserved. Designed by GraphicFuel.com</p>
 			<img src="images/logo-down.jpg" alt="logo" />
 			<div id="social">
-				<img src="images/facebook.jpg" alt="facebook">
-				<img src="images/in.jpg" alt="in">
-				<img src="images/tweeter.jpg" alt="tweeter">
+				<img src="images/facebook.jpg" alt="facebook" />
+				<img src="images/in.jpg" alt="in" />
+				<img src="images/tweeter.jpg" alt="tweeter" />
 			</div>
 		</div>
 		
