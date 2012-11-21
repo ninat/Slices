@@ -1,8 +1,25 @@
 	<!doctype html>
 	<html>
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Homepage</title>
 		<style type="text/css">
+			.coin-slider { overflow: hidden; zoom: 1; position: relative; }
+.coin-slider a{ text-decoration: none; outline: none; border: none; }
+
+.cs-buttons { font-size: 0px; padding: 10px; float: left; }
+.cs-buttons a { margin-left: 5px; height: 10px; width: 10px; float: left; border: 1px solid #B8C4CF; color: #B8C4CF; text-indent: -1000px; }
+.cs-active { background-color: #B8C4CF; color: #FFFFFF; }
+
+.cs-title { width: 545px; padding: 10px; background-color: #000000; color: #FFFFFF; }
+
+.cs-prev, 
+.cs-next { background-color: #000000; color: #FFFFFF; padding: 0px 10px; }
+
+
+
+
+
 			body {
 				background: #000 url(images/upperBG.jpg) top center no-repeat;
 				margin: 0;
@@ -136,7 +153,7 @@
 			}*/
 			#ball {
 				float:right;
-				margin: -415px 45px 0 0;
+				margin: -415px 50px 0 0;
 				z-index: 20;
 				/*position:relative;
 				top: 17px ;
@@ -161,9 +178,12 @@
 	   			right: 50px;
 	    		top: -240px;*/
 			 }
-			#ad:hover{
+			 #coin-slider {
+			 	margin:40px auto 0 auto;
+			 }
+			/*#ad:hover{
 	        	border: 5px solid orange;
-	        }
+	        }*/
 			section p{
 				font: 29px Trebushed, sans-serif;
 				color:#fff;
@@ -291,7 +311,7 @@
 			}
 
 
-			#mask {
+			/*#mask {
 	overflow:hidden;
 	height:269px;
 }
@@ -414,7 +434,7 @@
 	margin:20px auto 0;
 	overflow:visible;
 	position:relative;
-}
+}*/
 
 		</style>
 	</head>
@@ -465,7 +485,7 @@
 				</div>		
 				<div id="ball">
 					<p>U Design + V Code</p>
-					<ul>
+					<!--<ul>
 						<li class="fourthanimation"> <a href="www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
 						<li class="thirdanimation"> <a href="http://www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
 						
@@ -473,38 +493,35 @@
 						<li class="firstanimation"> <a href="http://www.tut.by" > <img src="images/ball-white.jpg" alt="white ball" /> </a></li>
 						
 					</ul>
-					<div id="slider">
-						<div id="mask">
+					<div id="slider">-->
+						<div id="coin-slider">
+							<a href="images" target="_blank">
 							
-							<ul>
-								<li class="firstanimation">
-           							<img src="images/ad.jpg" alt="ad"/>
-           						</li>
+								<img src="images/ad.jpg" alt="ad"/>
+           					</a>
 
-            					<li class="secondanimation">
+            					<a href="img02_url" target="_blank">
            							
            								<img src="images/ad1.jpg" alt="ad"/>
             						
             
-            					</li>
+            					</a>
             
-            					<li  class="thirdanimation">
+            					<a href="img03_url" target="_blank">
             						
             							<img src="images/ad.jpg" alt="ad"/>
             						
             
-            					</li>
+            					</a>
                         
-            					<li class="fourthanimation">
+            					<a href="img04_url" target="_blank">
             						
             							<img src="images/ad1.jpg" alt="ad"/>
             						
             
-            					</li>
-							</ul>
+            					</a>
+							</div>
 						</div>
-					</div>				
-				</div>
 			</div>	
 			<div id="columns">
 				<div class="col">
@@ -592,5 +609,12 @@
 			</footer>	
 		</div>
 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="coin-slider.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+    			$('#coin-slider').coinslider({width: 398, navigation: false, delay: 5000 });
+			});			
+		</script>		
 	</body>
 	</html>
