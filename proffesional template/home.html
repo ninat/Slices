@@ -177,7 +177,7 @@
 				background: url(images/start-button.jpg) no-repeat;
 				padding: 14px 53px 18px 14px;
 				display:inline;
-				color:red;
+				color:#b90016;
 				margin-left: 55px;
 				height: 55px;
 				width: 269px;
@@ -293,7 +293,7 @@
 
 			#mask {
 	overflow:hidden;
-	height:320px;
+	height:269px;
 }
 #slider ul {
 	margin:0;
@@ -301,26 +301,26 @@
 	position:relative;
 }
 #slider li {
-	width:269px;
-	height:398px;
+	width:398px;
+	height:269px;
 	position:absolute;
 	top:-325px;
 	list-style:none;
 }
 
-#slider li.firstanimation {
+#slider li.firstanimation, #ball li.firstanimation {
 	-moz-animation:cycle 20s linear infinite;	
 	-webkit-animation:cycle 20s linear infinite;		
 }
-#slider li.secondanimation {
+#slider li.secondanimation, #ball li.secondanimation{
 	-moz-animation:cycletwo 20s linear infinite;
 	-webkit-animation:cycletwo 20s linear infinite;		
 }
-#slider li.thirdanimation {
+#slider li.thirdanimation, #ball li.thirdanimation{
 	-moz-animation:cyclethree 20s linear infinite;
 	-webkit-animation:cyclethree 20s linear infinite;		
 }
-#slider li.fourthanimation {
+#slider li.fourthanimation, #ball li.fourthanimation{
 	-moz-animation:cyclefour 20s linear infinite;
 	-webkit-animation:cyclefour 20s linear infinite;		
 }
@@ -411,7 +411,7 @@
 #slider {
 	height:269px;
 	width:398px;
-	margin:40px auto 0;
+	margin:20px auto 0;
 	overflow:visible;
 	position:relative;
 }
@@ -466,51 +466,43 @@
 				<div id="ball">
 					<p>U Design + V Code</p>
 					<ul>
-						<li> <a href="http://www.tut.by" > <img src="images/ball-white.jpg" alt="white ball" /> </a></li>
-						<li> <a href="http://www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
-						<li> <a href="http://www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
-						<li> <a href="www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
+						<li class="fourthanimation"> <a href="www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
+						<li class="thirdanimation"> <a href="http://www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
+						
+						<li class="secondanimation"> <a href="http://www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
+						<li class="firstanimation"> <a href="http://www.tut.by" > <img src="images/ball-white.jpg" alt="white ball" /> </a></li>
+						
 					</ul>
 					<div id="slider">
 						<div id="mask">
-					<ul>
-						<li id="first" class="firstanimation">
-            <a href="#">
-            <img src="images/ad.jpg" alt="ad"/>
-            </a>
-            <div class="tooltip">
-            
-            </div>
-            </li>
+							
+							<ul>
+								<li class="firstanimation">
+           							<img src="images/ad.jpg" alt="ad"/>
+           						</li>
 
-            <li id="second" class="secondanimation">
-            <a href="#">
-            <img src="images/ad1.jpg" alt="ad"/>
-            </a>
-            <div class="tooltip">
+            					<li class="secondanimation">
+           							
+           								<img src="images/ad1.jpg" alt="ad"/>
+            						
             
-            </div>
-            </li>
+            					</li>
             
-            <li id="third" class="thirdanimation">
-            <a href="#">
-            <img src="images/ad.jpg" alt="ad"/>
-            </a>
-            <div class="tooltip">
+            					<li  class="thirdanimation">
+            						
+            							<img src="images/ad.jpg" alt="ad"/>
+            						
             
-            </div>
-            </li>
+            					</li>
                         
-            <li id="fourth" class="fourthanimation">
-            <a href="#">
-            <img src="images/ad1.jpg" alt="ad"/>
-            </a>
-            <div class="tooltip">
+            					<li class="fourthanimation">
+            						
+            							<img src="images/ad1.jpg" alt="ad"/>
+            						
             
-            </div>
-            </li>
-					</ul>
-					</div>
+            					</li>
+							</ul>
+						</div>
 					</div>				
 				</div>
 			</div>	
