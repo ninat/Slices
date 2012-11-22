@@ -1,620 +1,274 @@
-	<!doctype html>
-	<html>
+<!DOCTYPE html>
+<html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Homepage</title>
-		<style type="text/css">
-			.coin-slider { overflow: hidden; zoom: 1; position: relative; }
-.coin-slider a{ text-decoration: none; outline: none; border: none; }
-
-.cs-buttons { font-size: 0px; padding: 10px; float: left; }
-.cs-buttons a { margin-left: 5px; height: 10px; width: 10px; float: left; border: 1px solid #B8C4CF; color: #B8C4CF; text-indent: -1000px; }
-.cs-active { background-color: #B8C4CF; color: #FFFFFF; }
-
-.cs-title { width: 545px; padding: 10px; background-color: #000000; color: #FFFFFF; }
-
-.cs-prev, 
-.cs-next { background-color: #000000; color: #FFFFFF; padding: 0px 10px; }
-
-
-
-
-
-			body {
-				background: #000 url(images/upperBG.jpg) top center no-repeat;
-				margin: 0;
-				padding:0;
-			}
-			h1{
-				color:#575757;
-				font:25px Arial, sans-serif;
-			}
-			#columns
-			{
-				clear: both;	
-				overflow: hidden;
-			}
-
-			.col {
-				float:left;
-				width:265px;
-				margin:0 0px 0 40px;
-			}	
-			
-			p{
-				font:12px Arial, sans-serif;
-				color:#4f4f4f;
-				margin:0;
-			}
-			#wrapper{
-				background-color: #fff;
-				width:960px;
-				/*height:1340px;*/
-				margin:40px auto;
-				border-radius: 10px;
-				
-			}
-			.col ul li a{
-				font: 12px Arial, sans-serif;
-				text-decoration: none;
-			}
-			.col ul li{
-				list-style:none;
-				background-image: url(images/col2List.jpg);
-				background-repeat: no-repeat;
-				background-position: 0 17px;
-				padding:12px 7px;}
-			.col li:first-child {
-				border-bottom: 1px dotted #a4a4a4;
-			}
-			.col li:last-child {
-				border-top: 1px dotted #a4a4a4;
-			}
-			#columns .col button{
-				/*margin-top: 20px;*/
-				color:#868686;
-				font: 12px "Myriad Pro", Helvetica,sans-serif;
-			}
-			#columns .col p {
-				padding: 25px 0 20px 0;
-
-			}
-			header img{
-				position:relative;
-				float:left;
-				top:35px;
-				left:40px;
-			}
-			header ul li{
-				display:inline;
-				padding:0px 24px;
-				position: relative;
-				float:right;
-				top:58px; /*26*/
-				right:-220px;
-			}
-			
-			header li a {
-				font:12px Arial, sans-serif;
-				text-decoration: none;
-				color:#808080;
-			}
-			
-			header ul li:last-child  {
-				background-image: url(images/home.jpg);
-				background-repeat: no-repeat;
-				background-position: center;
-				height: 20px;
-    			padding: 2px 20px 5px;
-    			width: 35px;
-			}
-
-			#wrapper header #page{
-				color:#fff;
-			}
-			#wrapper ul{
-				margin:0;
-				padding: 0;
-			}
-			#tel{
-				background: url(images/tel.jpg) no-repeat scroll 0 0 transparent;
-			    color: #C7C7C7;
-			    display: block;
-			    float: right;
-			    font: bold 18px Arial,sans-serif;
-			    height: 24px;
-			    padding: 2px 0 10px 83px;
-			    width: 139px;
-			}
-			header {
-				height: 98px;
-			}
-			/*#advertisement {
-				height: 458px;
-			}*/
-			section {
-				background-image: url(images/section-bg.jpg);
-				background-repeat: no-repeat;
-				height:336px;
-				/*position:relative;
-				top:100px;*/
-			}
-
-			#shadow {
-				position:relative;
-				top:-127px;
-				left:489px;
-			}
-			/*#ad{
-				float: right;
-	    		/*position: relative;
-	   			right: -7px;
-	   			top: -185px;
-			}*/
-			#ball {
-				float:right;
-				margin: -415px 50px 0 0;
-				z-index: 20;
-				/*position:relative;
-				top: 17px ;
-				left: 515px;
-				width: 440px;*/
-			} 
-			 #wrapper #ball p {
-			 	font:bold 20px Arial sans-serif;
-			 	color:#000;
-			 	/*display: inline;
-			 	float: left;
-			 	padding: 15px 140px 12px 25px;
-			 	position: relative;
-	   			right: 25px;
-	    		top: -240px;*/
-			 }
-			 #ball ul li{
-			 	list-style-type:none;
-				display: inline;
-				float:right;
-				/*position: relative;
-	   			right: 50px;
-	    		top: -240px;*/
-			 }
-			 #coin-slider {
-			 	margin:40px auto 0 auto;
-			 }
-			/*#ad:hover{
-	        	border: 5px solid orange;
-	        }*/
-			section p{
-				font: 29px Trebushed, sans-serif;
-				color:#fff;
-				position:left;
-				margin:0;
-				/*width: 450px;*/
-				padding: 88px 65px 55px 50px;
-			}
-			section #start-button{
-				font: bold 20px Trebushed, sans-serif;
-				background: url(images/start-button.jpg) no-repeat;
-				padding: 14px 53px 18px 14px;
-				display:inline;
-				color:#b90016;
-				margin-left: 55px;
-				height: 55px;
-				width: 269px;
-			}
-			#blurbs{
-				background-image: url(images/bg-grey.jpg);
-				position:relative;
-				height:122px;
-				/*top:97px;*/
-				clear:both;
-				overflow: hidden;	
-				z-index: 10;	
-			}
-			#blurbs .reason{
-				width:33%;
-				/*height:122px;*/
-				float:left;
-				
-			}
-			#blurbs .reason p{
-				/*padding:50px 0 33px 0;*/
-				font:12px Arial, sans-serif ;
-				color:#575757;
-				margin: auto;
-				display: inline;
-				padding: 0;
-			}
-			
-			h2{
-				font:bold 15px Arial, sans-serif ;
-				margin: 0;
-				padding:50px 0 0 0;
-				color:#575757;
-			}
-			.reason img{
-				padding:40px 20px 22px 50px;
-				float: left;
-			}
-			.byline{
-				font-style: bold;
-			}
-			#column1, #column2, #column3{
-				float:left;
-			}
-			#column1{
-				width:190px;
-				margin:0 40px;
-			}
-			#column2{
-				width: 300px;
-				padding-bottom: 10px;
-			}
-			#column3{
-				width: 280px;
-				margin: 0 40px 0 70px;
-			}
-			footer{
-				background-color: #ededed;
-				border-top: 1px solid #bababa;
-				overflow: hidden;
-				/*clear:both;*/
-			}
-			#wrapper footer ul li a{
-				color:#4f4f4f;
-				text-decoration: none;
-				font: 12px Arial, sans-serif;
-			}
-			#column1 ul{
-				list-style-type:none;
-				
-			}
-			footer h2 {
-				padding:30px 0;
-			}
-			#column2 p span{
-				font-weight: bold;
-				color:#000;
-
-			}
-			#column3 p span{
-				font-weight: bold;
-				color:#4a78c5;
-			}
-			#column3 p {
-				line-height: 100%;
-			}
-			#copyright {
-				border-top: 1px solid #fff;
-				clear:both;
-
-			}
-			#copyright p {
-				/*display:inline;*/
-				padding:25px 40px 5px 40px;
-				
-				margin:0;
-			}
-			#copyright img{
-				float:right;
-				position:relative;
-				right:40px;
-				bottom:25px;
-				padding-left:62px;
-			}
-			#social img{
-				padding-right: 16px;
-				padding-left: 0;
-			}
-			#nav {
-				border-bottom: 1px solid #cccccc;
-			}
-
-
-			/*#mask {
-	overflow:hidden;
-	height:269px;
-}
-#slider ul {
-	margin:0;
-	padding:0;
-	position:relative;
-}
-#slider li {
-	width:398px;
-	height:269px;
-	position:absolute;
-	top:-325px;
-	list-style:none;
-}
-
-#slider li.firstanimation, #ball li.firstanimation {
-	-moz-animation:cycle 20s linear infinite;	
-	-webkit-animation:cycle 20s linear infinite;		
-}
-#slider li.secondanimation, #ball li.secondanimation{
-	-moz-animation:cycletwo 20s linear infinite;
-	-webkit-animation:cycletwo 20s linear infinite;		
-}
-#slider li.thirdanimation, #ball li.thirdanimation{
-	-moz-animation:cyclethree 20s linear infinite;
-	-webkit-animation:cyclethree 20s linear infinite;		
-}
-#slider li.fourthanimation, #ball li.fourthanimation{
-	-moz-animation:cyclefour 20s linear infinite;
-	-webkit-animation:cyclefour 20s linear infinite;		
-}
-#slider:hover li {
-	-moz-animation-play-state:paused;
-	-webkit-animation-play-state:paused;
-}
-@-moz-keyframes cycle {
-	0%  { top:0px; }
-	5%  { top:0px; } 
-	20% { top:0px; opacity:1; z-index:0; } 
-	25% { top:325px; opacity:0; z-index:0; } 
-	26% { top:-325px; opacity:0; z-index:-1; }
-	90% { top:-325px; opacity:0; z-index:0; }
-	95% { top:-325px; opacity:0; }
-	100%{ top:0px; opacity:1; }
-	
-}
-@-moz-keyframes cycletwo {
-	0%  { top:-325px; opacity:0; }
-	20% { top:-325px; opacity:0; }
-	25% { top:0px; opacity:1; }
-	30% { top:0px; opacity:1; } 
-	45% { top:0px; opacity:1; z-index:0; } 
-	50% { top:325px; opacity:0; z-index:0; }
-	51% { top:-325px; opacity:0; z-index:-1; } 
-	100%{ top:-325px; opacity:0; z-index:-1; }
-}
-@-moz-keyframes cyclethree {
-	0%  { top:-325px; opacity:0; }
-	45% { top:-325px; opacity:0; }
-	50% { top:0px; opacity:1; }
-	55% { top:0px; opacity:1; } 
-	70% { top:0px; opacity:1; } 
-	75% { top:325px; opacity:0; z-index:0; }
-	76% { top:-325px; opacity:0; z-index:-1; } 
-	100%{ top:-325px; opacity:0; z-index:-1; }
-}
-@-moz-keyframes cyclefour {
-	0%  { top:-325px; opacity:0; }
-	70% { top:-325px; opacity:0; }
-	75% { top:0px; opacity:1; }
-	80% { top:0px; opacity:1; }
-	95% { top:0px; opacity:1; z-index:0; }
-	100%{ top:325px; opacity:0; z-index:0; }
-}
-
-@-webkit-keyframes cycle {
-	0%  { top:0px; }
-	5%  { top:0px; } 
-	20% { top:0px; opacity:1; z-index:0; } 
-	25% { top:325px; opacity:0; z-index:0; } 
-	26% { top:-325px; opacity:0; z-index:-1; }
-	90% { top:-325px; opacity:0; z-index:0; }
-	95% { top:-325px; opacity:0; }
-	100%{ top:0px; opacity:1; }
-	
-}
-@-webkit-keyframes cycletwo {
-		0%  { top:-325px; opacity:0; }
-	20% { top:-325px; opacity:0; }
-	25% { top:0px; opacity:1; }
-	30% { top:0px; opacity:1; } 
-	45% { top:0px; opacity:1; z-index:0; } 
-	50% { top:325px; opacity:0; z-index:0; }
-	51% { top:-325px; opacity:0; z-index:-1; } 
-	100%{ top:-325px; opacity:0; z-index:-1; }
-}
-@-webkit-keyframes cyclethree {
-	0%  { top:-325px; opacity:0; }
-	45% { top:-325px; opacity:0; }
-	50% { top:0px; opacity:1; }
-	55% { top:0px; opacity:1; } 
-	70% { top:0px; opacity:1; } 
-	75% { top:325px; opacity:0; z-index:0; }
-	76% { top:-325px; opacity:0; z-index:-1; } 
-	100%{ top:-325px; opacity:0; z-index:-1; }
-}
-@-webkit-keyframes cyclefour {
-	0%  { top:-325px; opacity:0; }
-	70% { top:-325px; opacity:0; }
-	75% { top:0px; opacity:1; }
-	80% { top:0px; opacity:1; }
-	95% { top:0px; opacity:1; z-index:0; }
-	100%{ top:325px; opacity:0; z-index:0; }
-}
-
-#slider {
-	height:269px;
-	width:398px;
-	margin:20px auto 0;
-	overflow:visible;
-	position:relative;
-}*/
-
-		</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>
+			Homepage
+		</title>
+		<link rel='stylesheet' href='styles.css' type='text/css'>
 	</head>
 	<body>
-		
 		<nav></nav>
 		<aside></aside>
-		
 		<div id="wrapper">
 			<header>
-				<p id="tel">123-456-7890</p>
+				<p id="tel">
+					123-456-7890
+				</p>
 				<div>
-					<img src="images/logoUp.jpg" alt="logo" id="logo"/>
+					<img src="images/logoUp.jpg" alt="logo" id="logo">
 					<ul>
-						<li><a href="contact.html">CONTACT</a></li>
-						<li><a href="portfolio.html">PORTFOLIO</a></li>
-						<li><a href="services.html">SERVICES</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="home.html" id="page"> HOME </a></li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+						<li>
+							<a href="portfolio.html">PORTFOLIO</a>
+						</li>
+						<li>
+							<a href="services.html">SERVICES</a>
+						</li>
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<a href="home.html" id="page">HOME</a>
+						</li>
 					</ul>
 				</div>
 			</header>
-			<div id="advertisement">	
+			<div id="advertisement">
 				<section>
-				
-					<p>We have what it takes to <br> take your website to the <br>NEW HEIGHT OF SUCCESS</p>
-					<p id="start-button">GET STARTED HERE</p>
-					
-				</section>	
-
-				<div id="blurbs">			
-					<div class="reason">
-						<img src="images/purse.jpg" alt="purse" />
-						<h2>Save big with us</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					</div>
-					<div class="reason">
-						<img src="images/clock.jpg" alt="clock" />
-						<h2>Always on time</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					</div>
-					<div class="reason">
-						<img src="images/telephone.jpg" alt="telephone" />
-						<h2>Contact us</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					</div>	
-					<img src="images/ad-shadow.jpg" alt="ad shadow" id="shadow" />		
-				</div>		
-				<div id="ball">
-					<p>U Design + V Code</p>
-					<!--<ul>
-						<li class="fourthanimation"> <a href="www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
-						<li class="thirdanimation"> <a href="http://www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
-						
-						<li class="secondanimation"> <a href="http://www.tut.by" > <img src="images/ball - blue.jpg" alt="blue ball" /> </a></li>
-						<li class="firstanimation"> <a href="http://www.tut.by" > <img src="images/ball-white.jpg" alt="white ball" /> </a></li>
-						
-					</ul>
-					<div id="slider">-->
-						<div id="coin-slider">
-							<a href="images" target="_blank">
-							
-								<img src="images/ad.jpg" alt="ad"/>
-           					</a>
-
-            					<a href="img02_url" target="_blank">
-           							
-           								<img src="images/ad1.jpg" alt="ad"/>
-            						
-            
-            					</a>
-            
-            					<a href="img03_url" target="_blank">
-            						
-            							<img src="images/ad.jpg" alt="ad"/>
-            						
-            
-            					</a>
-                        
-            					<a href="img04_url" target="_blank">
-            						
-            							<img src="images/ad1.jpg" alt="ad"/>
-            						
-            
-            					</a>
-							</div>
-						</div>
-			</div>	
-			<div id="columns">
-				<div class="col">
-					<h1>Who we are?</h1>
-					<img src="images/colon1.jpg" alt="Web Design Example" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci, ut pretium mi sollicitudin id. Sed nec lectus ac enim malesuada mollis. 
+					<p>
+						We have what it takes to<br>
+						take your website to the<br>
+						NEW HEIGHT OF SUCCESS
 					</p>
-					<button type="button">READ MORE</button>
+					<p id="start-button">
+						GET STARTED HERE
+					</p>
+				</section>
+				<div id="blurbs">
+					<div class="reason">
+						<img src="images/purse.jpg" alt="purse">
+						<h2>
+							Save big with us
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div>
+					<div class="reason">
+						<img src="images/clock.jpg" alt="clock">
+						<h2>
+							Always on time
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div>
+					<div class="reason">
+						<img src="images/telephone.jpg" alt="telephone">
+						<h2>
+							Contact us
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div><img src="images/ad-shadow.jpg" alt="ad shadow" id="shadow">
 				</div>
-				<div class="col">
-					<h1>What we do?</h1>
-					<img src="images/colon2.jpg" alt="Web Design Example" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci. 
-					<ul>
-						<li>
-							<a href="www.tut.by">Website design </a>
-						</li>
-						<li>
-							<a href="www.tut.by">Blog design</a>
-						</li>
-						<li>
-							<a href="www.tut.by">Branding design</a>
-						</li>
-					</ul>	
+				<div id="ball">
+					<div id="position-cs-buttons">
+						<p>
+							U Design + V Code
+						</p>
+						<div class="cs-buttons">
+
+							<a href="#"><img src="images/ball-white.jpg" alt="blue ball"></a> 
+							<a href="#"><img src="images/ball-blue.jpg" alt="blue ball"></a> 
+							<a href="#"><img src="images/ball-blue.jpg" alt="blue ball"></a> 
+							<a href="#"><img src="images/ball-blue.jpg" alt="white ball"></a>
+						</div>
+					</div>
+					<div id="carousel">
+						<a href="#ad-first"><img src="images/ad.jpg" alt="ad"></a> 
+						<a href="#ad-second"><img src="images/ad1.jpg" alt="ad second"></a> 
+						<a href="#ad-third"><img src="images/ad.jpg" alt="ad third"></a> 
+						<a href="#ad-fourht"><img src="images/ad1.jpg" alt="ad fourth"></a> 
+					</div>
 				</div>
-				<div class="col">
-					<h1>Why hire us?</h1>
-					<img src="images/colon3.jpg" alt="Web Design Example" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci, ut pretium mi sollicitudin id. Sed nec lectus ac enim malesuada mollis.
-					</p>	
-					<button type="button">READ MORE</button>
-				</div>
-			</div>
-			<footer>
-				<div id="nav">
-					<div id="column1">
-						<h2>Browse Site</h2>
+				<div id="columns">
+					<div class="col">
+						<h1>
+							Who we are?
+						</h1><img src="images/colon1.jpg" alt="Web Design Example">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci, ut pretium mi sollicitudin id. Sed nec lectus ac enim malesuada mollis.
+						</p><button type="button">READ MORE</button>
+					</div>
+					<div class="col">
+						<h1>
+							What we do?
+						</h1><img src="images/colon2.jpg" alt="Web Design Example">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci.
+						</p>
 						<ul>
 							<li>
-								<a href="www.google.com">About our conpany</a>
+								<a href="http://www.tut.by">Website design</a>
 							</li>
-					<li>
-						<a href="www.google.com">Contact us</a>
-					</li>
-					<li>
-						<a href="www.google.com">Our Portforio</a>
-					</li>
-					<li>
-						<a href="www.google.com">Our Prices</a>
-					</li>
-					<li>
-						<a href="www.google.com">Online quote form</a>
-					</li>
-					<li>
-						<a href="www.google.com">Client Testimonials</a>
-					</li>
-				</ul>
-			</div>
-			<div id="column2">
-				<h2>Our Testimonials</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci, ut pretium mi sollicitudin id. Sed nec lectus ac enim malesuada mollis. Etiam egestas purus vitae eros mollis et elementum tellus facilisis. In iaculis, sapien ut tincidunt convallis, enim ipsum pretium libero, sed mattis libero augue eget metus. Sed rhoncus ultrices metus ac interdum. 
-				</p>
-				<p> <span>Rafi, GraphicsFuel.com </span></p>
-			</div>
-			<div id="column3">
-				<h2>From Our Blog</h2>
-				<p>July 6, 2010</p>
-				<p><span>Lorem ipsum dolor sit amet, consectetur </span> adipiscing elit. Maecenas placerat vehicula magna, quis hendrerit risus commodo eu. Vivamus ultricies porttitor dui... </p>
-				<p>&nbsp</p>
-				<p>July 6, 2010</p>
-				<p><span>Lorem ipsum dolor sit amet, consectetur </span> adipiscing elit. Maecenas placerat vehicula magna, quis hendrerit risus commodo eu. Vivamus ultricies porttitor dui... </p>
-			</div>
-			</div>
-			
-			<div id="copyright">
-				<p>Copyright &copy; 2010 Business. All rights reserved. Designed by GraphicFuel.com</p>
-				<img src="images/logo-down.jpg" alt="logo" />
-				<div id="social">
-					<img src="images/facebook.jpg" alt="facebook" />
-					<img src="images/in.jpg" alt="in" />
-					<img src="images/tweeter.jpg" alt="tweeter" />
+							<li>
+								<a href="http://www.tut.by">Blog design</a>
+							</li>
+							<li>
+								<a href="http://www.tut.by">Branding design</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<h1>
+							Why hire us?
+						</h1><img src="images/colon3.jpg" alt="Web Design Example">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci, ut pretium mi sollicitudin id. Sed nec lectus ac enim malesuada mollis.
+						</p><button type="button">READ MORE</button>
+					</div>
 				</div>
+				<footer>
+					<div id="nav">
+						<div id="column1">
+							<h2>
+								Browse Site
+							</h2>
+							<ul>
+								<li>
+									<a href="http://www.google.com">About our conpany</a>
+								</li>
+								<li>
+									<a href="http://www.google.com">Contact us</a>
+								</li>
+								<li>
+									<a href="http://www.google.com">Our Portforio</a>
+								</li>
+								<li>
+									<a href="http://www.google.com">Our Prices</a>
+								</li>
+								<li>
+									<a href="http://www.google.com">Online quote form</a>
+								</li>
+								<li>
+									<a href="http://www.google.com">Client Testimonials</a>
+								</li>
+							</ul>
+						</div>
+						<div id="column2">
+							<h2>
+								Our Testimonials
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci, ut pretium mi sollicitudin id. Sed nec lectus ac enim malesuada mollis. Etiam egestas purus vitae eros mollis et elementum tellus facilisis. In iaculis, sapien ut tincidunt convallis, enim ipsum pretium libero, sed mattis libero augue eget metus. Sed rhoncus ultrices metus ac interdum.
+							</p>
+							<p>
+								<span>Rafi, GraphicsFuel.com</span>
+							</p>
+						</div>
+						<div id="column3">
+							<h2>
+								From Our Blog
+							</h2>
+							<p>
+								July 6, 2010
+							</p>
+							<p>
+								<span>Lorem ipsum dolor sit amet, consectetur</span> adipiscing elit. Maecenas placerat vehicula magna, quis hendrerit risus commodo eu. Vivamus ultricies porttitor dui...
+							</p>
+							<p>
+								&nbsp;
+							</p>
+							<p>
+								July 6, 2010
+							</p>
+							<p>
+								<span>Lorem ipsum dolor sit amet, consectetur</span> adipiscing elit. Maecenas placerat vehicula magna, quis hendrerit risus commodo eu. Vivamus ultricies porttitor dui...
+							</p>
+						</div>
+					</div>
+					<div id="copyright">
+						<p>
+							Copyright © 2010 Business. All rights reserved. Designed by GraphicFuel.com
+						</p><img src="images/logo-down.jpg" alt="logo">
+						<div id="social">
+							<img src="images/facebook.jpg" alt="facebook"> <img src="images/in.jpg" alt="in"> <img src="images/tweeter.jpg" alt="tweeter">
+						</div>
+					</div>
+				</footer>
 			</div>
-			
-			</footer>	
-		</div>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script> 
+			<!--
+			<script type="text/javascript" src="coin-slider.min.js"></script>
+				$('#coin-slider').coinslider({width: 398, navigation: false, delay: 5000 });
+			-->
+			 <script type="text/javascript">
+			 	(function(){
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script type="text/javascript" src="coin-slider.min.js"></script>
-		<script type="text/javascript">
-			$(function() {
-    			$('#coin-slider').coinslider({width: 398, navigation: false, delay: 5000 });
-			});			
-		</script>		
+			 		var interval = 4000,
+			 		    whiteImage = 'images/ball-white.jpg',
+			 		    blueImage = 'images/ball-blue.jpg',
+			 		    currentActiveIndex = 0;
+
+			 		var carouselChildren, buttonChildren, timer;
+
+			 		function hideCurrentActiveElements() {
+						var curCarousel = $(carouselChildren[currentActiveIndex]),
+			 			    curButton = $(buttonChildren[currentActiveIndex]);
+
+		 			    curCarousel.hide();
+		 			    curButton.children()[0].src = blueImage;
+			 		}
+
+			 		function showCurrentAciveElements() {
+						var nextCarousel = $(carouselChildren[currentActiveIndex]),
+			 			    nextButton = $(buttonChildren[currentActiveIndex]);
+
+						nextCarousel.show();
+						nextButton.children()[0].src = whiteImage;
+			 		}
+
+			 		function changeImage() {
+
+			 			hideCurrentActiveElements();
+			 			
+			 			currentActiveIndex++;						
+						if(4 == currentActiveIndex)
+						{
+							currentActiveIndex = 0;
+						}
+
+						showCurrentAciveElements();
+
+			 			timer = setTimeout(changeImage, interval);
+			 		}
+
+			 		function buttonClicked(e){
+						clearInterval(timer);
+
+						var index = buttonChildren.index(e.currentTarget);
+
+						hideCurrentActiveElements();
+						currentActiveIndex = index;						
+						showCurrentAciveElements();
+
+						timer = setTimeout(changeImage, interval);
+			 		}
+
+					$(function() {
+						carouselChildren = $('#carousel').children();
+						buttonChildren = $('.cs-buttons').children();
+						timer = setTimeout(changeImage, interval);
+
+						$('.cs-buttons a').click(buttonClicked);
+					});         
+				})();
+			</script>
+		</div>
 	</body>
-	</html>
+</html>
