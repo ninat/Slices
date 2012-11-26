@@ -31,7 +31,7 @@
 							<a href="about.html">ABOUT</a>
 						</li>
 						<li>
-							<a href="home.html" id="page">HOME</a>
+							<a href="home.html" id="page"><img src="images/home.jpg" alt="home" /></a>
 						</li>
 					</ul>
 				</div>
@@ -41,11 +41,11 @@
 					<p>
 						We have what it takes to<br>
 						take your website to the<br>
-						NEW HEIGHT OF SUCCESS
+						<span>NEW HEIGHT OF SUCCESS</span>
 					</p>
-					<p id="start-button">
-						GET STARTED HERE
-					</p>
+					<a href="http://www.start.com" >
+						<img src="images/start.jpg" alt="start" id="start-button">
+					</a>
 				</section>
 				<div id="blurbs">
 					<div class="reason">
@@ -69,7 +69,7 @@
 					<div class="reason">
 						<img src="images/telephone.jpg" alt="telephone">
 						<h2>
-							Contact us
+							Contact Us
 						</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -103,7 +103,8 @@
 						</h1><img src="images/colon1.jpg" alt="Web Design Example">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci, ut pretium mi sollicitudin id. Sed nec lectus ac enim malesuada mollis.
-						</p><button type="button">READ MORE</button>
+						</p>
+						<a href="http://www.readmore.com"><img src="images/read_more.jpg" alt="read more" /></a>
 					</div>
 					<div class="col">
 						<h1>
@@ -130,7 +131,8 @@
 						</h1><img src="images/colon3.jpg" alt="Web Design Example">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nibh nec turpis gravida ac ornare felis tristique. Nullam convallis consequat scelerisque. Pellentesque vestibulum convallis iaculis. Nullam condimentum tincidunt orci, ut pretium mi sollicitudin id. Sed nec lectus ac enim malesuada mollis.
-						</p><button type="button">READ MORE</button>
+						</p>
+						<a href="http://www.readmore.com"><img src="images/read_more.jpg" alt="read more" /></a>
 					</div>
 				</div>
 				<footer>
@@ -179,7 +181,7 @@
 								July 6, 2010
 							</p>
 							<p>
-								<span>Lorem ipsum dolor sit amet, consectetur</span> adipiscing elit. Maecenas placerat vehicula magna, quis hendrerit risus commodo eu. Vivamus ultricies porttitor dui...
+								<a href="http://www.blog.com">Lorem ipsum dolor sit amet, consectetur</a> adipiscing elit. Maecenas placerat vehicula magna, quis hendrerit risus commodo eu. Vivamus ultricies porttitor dui...
 							</p>
 							<p>
 								&nbsp;
@@ -188,7 +190,7 @@
 								July 6, 2010
 							</p>
 							<p>
-								<span>Lorem ipsum dolor sit amet, consectetur</span> adipiscing elit. Maecenas placerat vehicula magna, quis hendrerit risus commodo eu. Vivamus ultricies porttitor dui...
+								<a href="http://www.blog.com">Lorem ipsum dolor sit amet, consectetur</a> adipiscing elit. Maecenas placerat vehicula magna, quis hendrerit risus commodo eu. Vivamus ultricies porttitor dui...
 							</p>
 						</div>
 					</div>
@@ -197,78 +199,16 @@
 							Copyright © 2010 Business. All rights reserved. Designed by GraphicFuel.com
 						</p><img src="images/logo-down.jpg" alt="logo">
 						<div id="social">
-							<img src="images/facebook.jpg" alt="facebook"> <img src="images/in.jpg" alt="in"> <img src="images/tweeter.jpg" alt="tweeter">
+							<a href="http://www.facebook.com"><img src="images/facebook.jpg" alt="facebook"> </a>
+							<a href="http://www.linkedin.com"><img src="images/linkedin.jpg" alt="linkedin"> </a>
+							<a href="http://twitter.com"><img src="images/twitter.jpg" alt="twitter"> </a>
 						</div>
 					</div>
 				</footer>
 			</div>
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script> 
-			<!--
-			<script type="text/javascript" src="coin-slider.min.js"></script>
-				$('#coin-slider').coinslider({width: 398, navigation: false, delay: 5000 });
-			-->
-			 <script type="text/javascript">
-			 	(function(){
-
-			 		var interval = 4000,
-			 		    whiteImage = 'images/ball-white.jpg',
-			 		    blueImage = 'images/ball-blue.jpg',
-			 		    currentActiveIndex = 0;
-
-			 		var carouselChildren, buttonChildren, timer;
-
-			 		function hideCurrentActiveElements() {
-						var curCarousel = $(carouselChildren[currentActiveIndex]),
-			 			    curButton = $(buttonChildren[currentActiveIndex]);
-
-		 			    curCarousel.hide();
-		 			    curButton.children()[0].src = blueImage;
-			 		}
-
-			 		function showCurrentAciveElements() {
-						var nextCarousel = $(carouselChildren[currentActiveIndex]),
-			 			    nextButton = $(buttonChildren[currentActiveIndex]);
-
-						nextCarousel.show();
-						nextButton.children()[0].src = whiteImage;
-			 		}
-
-			 		function changeImage() {
-
-			 			hideCurrentActiveElements();
-			 			
-			 			currentActiveIndex++;						
-						if(4 == currentActiveIndex)
-						{
-							currentActiveIndex = 0;
-						}
-
-						showCurrentAciveElements();
-
-			 			timer = setTimeout(changeImage, interval);
-			 		}
-
-			 		function buttonClicked(e){
-						clearInterval(timer);
-
-						var index = buttonChildren.index(e.currentTarget);
-
-						hideCurrentActiveElements();
-						currentActiveIndex = index;						
-						showCurrentAciveElements();
-
-						timer = setTimeout(changeImage, interval);
-			 		}
-
-					$(function() {
-						carouselChildren = $('#carousel').children();
-						buttonChildren = $('.cs-buttons').children();
-						timer = setTimeout(changeImage, interval);
-
-						$('.cs-buttons a').click(buttonClicked);
-					});         
-				})();
-			</script>
-		</div>
+			<script src="slider.js" type="text/javascript">
+			</script> 	
+			</div>
 	</body>
 </html>
