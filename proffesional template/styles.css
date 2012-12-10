@@ -323,20 +323,22 @@ display:block;
 }
 
 #gratitute {
-background: blue;
+/*background: blue;*/
 height: 100px;
  
-/*background-image:url(images/contact-bg.jpg);
-background-repeat:repeat-x;*/}
+background-image:url(images/section-bg.jpg);
+background-repeat:repeat-x;}
 
 #gratitute p{
-font: italic 20px Arial, sans-serif;
+font: bold 25px Arial, sans-serif;
 color:white;
-padding:20px 25px; 
+margin: 33px 0 0 40px;
 float:left;
 }
 #gratitute p+ p{
-float:right;}
+font: italic 20px Arial, sans-serif;
+float:right;
+margin-right:65px;}
 
 #col-1 p{
 	font: 13px Arial, sans-serif;
@@ -365,6 +367,7 @@ background: -moz-linear-gradient(left,#dfdfdf, #fff);
 background: -webkit-linear-gradient(left,#dfdfdf, #fff);
 background: -o-linear-gradient(left,#dfdfdf, #fff);
 background: -ms-linear-gradient(left,#dfdfdf, #fff);
+
 }
 
 #col-2 h2{
@@ -373,10 +376,12 @@ background: -moz-linear-gradient(left,#cfcfcf, #fff);
 background: -webkit-linear-gradient(left,#cfcfcf, #fff);
 background: -o-linear-gradient(left,#cfcfcf, #fff);
 background: -ms-linear-gradient(left,#cfcfcf, #fff);
-
+position:relative;
+margin-bottom: 19px;
+color:#1c1c1c;
 }
 #col-2 a img {
-    margin:18px 10px 0 0;
+    margin:0px 10px 0 0;
 }
 .input{
 	width: 385px;
